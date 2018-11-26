@@ -1,0 +1,102 @@
+{
+    "WindowWidth": 1920,
+    "WindowHeight": 1080,
+	"AvailableFood" : 100,
+	"AllySpawnLife" : 10000,
+	"FoodCost": {
+		"Worker" : 5,
+		"AntiAir" : 10,
+		"Warrior" : 10,
+		"Bomber" : 15
+	},
+	"FoodDrop":{
+		"Kamikaze" : 10,
+		"Basic" : 7,
+		"Assassin" : 10,
+		"Boss" : 50
+	},
+	"Units" : {
+		"Allies" : {
+			"Worker" : {
+                "Life" : 5,
+                "AttackDamage" : 3,
+				"AttackableUnits" : ["Kamikaze","Basic","Assassin","Boss"],
+				"AttackableResources" : [],
+                "ViewBox" : 30,
+				"MoveSpeed" : 3
+			},
+			"AntiAir" : {
+                "Life" : 5,
+                "AttackDamage" : 5,
+				"AttackableResources" : [],
+				"AttackableUnits" : ["Kamikaze","Assassin","Boss"],
+                "ViewBox" : 30,
+				"MoveSpeed" : 3
+			},
+			"Warrior" : {
+                "Life" : 10,
+                "AttackDamage" : 6,
+				"AttackableResources" : [],
+				"AttackableUnits" : ["Kamikaze","Basic","Assassin","Boss"],
+                "ViewBox" : 30,
+				"MoveSpeed" : 3
+			},
+			"Bomber" : {
+				"Life" : 5,
+                "AttackDamage" : 10,
+				"AttackableResources" : [],
+				"AttackableUnits" : ["Kamikaze","Basic","Assassin","Boss"],
+                "ViewBox" : 30,
+				"MoveSpeed" : 7
+			}
+		},
+		"Enemies" : {
+			"Kamikaze" : {
+				"Life" : 5,
+                "AttackDamage" : 1,
+				"AttackableUnits" : [],
+                "ViewBox" : 30,
+                "MoveSpeed" : 1
+			},
+			"Basic" : {
+                "Life" : 5,
+				"AttackDamage" : 1,
+				"AttackableUnits" : ["Worker","AntiAir","Warrior","Bomber"],
+                "ViewBox" : 30,
+				"MoveSpeed" : 2
+			},
+			"Assassin" : {
+                "Life" : 10,
+                "AttackDamage" : 2,
+				"AttackableUnits" : ["Worker","AntiAir","Warrior","Bomber"],
+                "ViewBox" : 30,
+				"MoveSpeed" : 2
+			},
+			"Boss" : {
+                "Life" : 40,
+                "AttackDamage" : 2,
+				"AttackableUnits" : ["Worker","AntiAir","Warrior","Bomber"],
+                "ViewBox" : 30,
+				"MoveSpeed" : 2
+			}
+		}
+	},
+	"Waves" : {
+        "SecondsBetweenWaves" : 10,
+		"EnemyWaves" : {
+            "0" : ["Basic","Basic","Basic","Basic"],
+            "1" : ["Basic","Basic","Assassin","Assassin"],
+            "2" : ["Boss","Basic","Kamikaze","Assassin"]
+		}
+	},
+	"Spawns": {
+		"Ally" : {
+			"x" : 326,
+			"y" : 240
+		},
+		"Enemy" : {
+			"x" : 1909,
+			"y" : 0
+		}
+	}
+}

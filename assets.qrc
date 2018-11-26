@@ -1,0 +1,50 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource prefix="images/button">
+        <file>./Images/AntiAirButton.png</file>
+        <file>./Images/BomberButton.png</file>
+        <file>./Images/BuyButton.png</file>
+        <file>./Images/DeleteButton.png</file>
+        <file>./Images/SpawnButton.png</file>
+        <file>./Images/WarriorButton.png</file>
+        <file>./Images/WorkerButton.png</file>
+    </qresource>
+
+    <qresource prefix="settings">
+        <file>./level.json</file>
+    </qresource>
+
+    <qresource prefix="sounds">
+        <file>./Sounds/buy.wav</file>
+        <file>./Sounds/choose.wav</file>
+        <file>./Sounds/delete.wav</file>
+        <file>./Sounds/music.mp3</file>
+        <file>./Sounds/spawn.wav</file>
+    </qresource>
+
+    <qresource prefix="images/screen">
+        <file>./Images/titre.png</file>
+        <file>./Images/win.png</file>
+        <file>./Images/mine.png</file>
+        <file>./Images/lose.png</file>
+        <file>./Images/map.png</file>
+        <file>./Images/icon.png</file>
+    </qresource>
+
+    <qresource prefix="images/trails">
+        <file>./Images/workerTrails.png</file>
+        <file>./Images/warriorTrails.png</file>
+        <file>./Images/antiairTrails.png</file>
+    </qresource>
+
+    <qresource prefix="images/unitSprite">
+        <file>./Images/antiAir.png</file>
+        <file>./Images/bomber.png</file>
+        <file>./Images/assassin.png</file>
+        <file>./Images/basic.png</file>
+        <file>./Images/boss.png</file>
+        <file>./Images/warrior.png</file>
+        <file>./Images/worker.png</file>
+        <file>./Images/kamikaze.png</file>
+    </qresource>
+</RCC>
